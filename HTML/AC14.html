@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 14</title>
+    <link rel="stylesheet" href="../CSS/style14.css">
+    <link rel="stylesheet" href="../CSS/generico.css">
+</head>
+
+<body>
+    <header>
+        <h1><a class="titulo" href="../index.html">Proyecto</a></h1>
+        <nav class="menu">
+            <a class="link" href="AC1.html">Actividad 1</a>
+            <a class="link" href="AC2.html">Actividad 2</a>
+            <a class="link" href="AC3.html">Actividad 3</a>
+            <a class="link" href="AC4.html">Actividad 4</a>
+            <a class="link" href="AC5.html">Actividad 5</a>
+            <a class="link" href="AC6.html">Actividad 6</a>
+            <a class="link" href="AC7.html">Actividad 7</a>
+            <a class="link" href="AC8.html">Actividad 8</a>
+            <a class="link" href="AC9.html">Actividad 9</a>
+            <a class="link" href="AC10.html">Actividad 10</a>
+            <a class="link" href="AC11.html">Actividad 11</a>
+            <a class="link" href="AC12.html">Actividad 12</a>
+            <a class="link" href="AC13.html">Actividad 13</a>
+            <a class="link" href="AC14.html">Actividad 14</a>
+        </nav>
+    </header>
+    <div class="head"></div>
+
+    <form name="formulario" method="get" action="/send.php">
+
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off" size="40"
+                placeholder="Introduce tu nombre de usuario" pattern="[A-Za-z]+">
+        </div>
+
+        <div>
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass" name="pass" placeholder="Contraseña" minlength="8">
+        </div>
+
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="telefono">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="nombre@dominio.com"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" </div>
+
+            <div>
+                <label for="url">Página Web:</label>
+                <input type="url" id="url" name="url" placeholder="www.web.com">
+            </div>
+
+            <h4>Numérico</h4>
+            <div>
+                <label for="numero">Número (5-50):</label>
+                <input type="number" id="numero" name="numero" min="5" max="50" value="22">
+
+                <label for="rango">Rango:</label>
+                <input type="range" id="rango" name="rango" min="5" max="50" value="22">
+            </div>
+
+            <div>
+                <label for="nivel">Grado de satisfacción:</label>
+                <input id="nivel" type="range" name="nivel" min="1" max="10"
+                    oninput="document.getElementById('resultado').value = this.value">
+                <output id="resultado" for="nivel" name="nivel"></output>/10
+            </div>
+
+            <h4>Fecha/hora</h4>
+            <div>
+                <label for="date">Selecciona la fecha deseada:</label>
+                <input type="date" name="date" id="date" min="2019-05-25" step="2">
+            </div>
+
+            <div>
+                <label for="hora">Selecciona la hora deseada:</label>
+                <input type="time" id="hora" name="hora" min="18:00" max="22:00">
+            </div>
+
+            <div>
+                <label for="mes">Selecciona el mes deseado:</label>
+                <input type="month" id="mes" name="mes" min="2018-02">
+            </div>
+
+            <div>
+                <label for="semana">Selecciona la semana deseada:</label>
+                <input type="week" id="semana" name="semana" max="2019-W18">
+            </div>
+
+            <h4>Casillas de verificación</h4>
+            <div>
+                <span>Sexo:</span>
+                <input type="radio" id="sexo_h" name="sexo" value="H" checked>
+                <label for="sexo_h">Hombre</label>
+
+                <input type="radio" id="sexo_m" name="sexo" value="M">
+                <label for="sexo_m">Mujer</label>
+
+                <input type="radio" id="sexo_o" name="sexo" value="X">
+                <label for="sexo_o">Otro</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="empresa" name="empresa" checked>
+                <label for="empresa">¿Eres autónomo?</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="condiciones" name="condiciones">
+                <label for="condiciones">Aceptar condiciones</label>
+            </div>
+
+            <h4>Listado de Selección</h4>
+            <div>
+                <label for="so">Sistemas operativos:</label>
+                <select name="so" id="so">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="select" selected="selected">SELECCIONADO</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="so1">Sistema operativos (Lista 1):</label><br>
+                <select name="so1" size="5" id="so1">
+                    <option value="" selected="selected">1 DDDDDD</option>
+                    <option value="">2DDDD</option>
+                    <option value="">3DDDD</option>
+                    <option value="">DDDDDD4</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="so2">Sistema operativos (Lista 2):</label><br>
+                <select name="so2" size="5" id="so2">
+                    <option value="" selected="selected">1 DDDDDD</option>
+                    <option value="">2DDDD</option>
+                    <option value="">3DDDxxxD</option>
+                    <option value="">DDDDDD4</option>
+                    <option value="">DDDDDD4</option>
+                    <option value="">DDDDDD4</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="programa">Programa seleccionado:</label><br>
+                <select name="programa" id="programa" multiple size="10">
+                    <optgroup label="Sistemas operativos">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </optgroup>
+                    <optgroup label="Viva España">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <h4><label for="color">Selección de color</label></h3>
+                    <input type="color" name="color" id="color">
+            </div>
+
+            <div>
+                <h4><label for="file">Selección de archivo</label></h3>
+                    <input type="file" name="file" id="file" accept=".pdf" multiple>
+            </div>
+            <div>
+                <h4>Botones</h4>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Reset de formulario">
+            </div>
+
+    </form>
+</body>
+
+</html>

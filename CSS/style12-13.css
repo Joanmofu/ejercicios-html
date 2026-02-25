@@ -1,0 +1,30 @@
+tr.uno{
+    border: 1px solid blue ;
+}
+table.uno {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+    border: 3px solid blue ;
+    text-align: center;
+}
+th.rojo{
+    background-color: rgb(226, 105, 18);
+}
+th.azul{
+    background-color: rgb(37, 158, 152);
+}
+td.azul{
+    background-color: rgb(37, 158, 152);
+}
+table.dos {
+    font-family: Arial, sans-serif;
+    align-items: center;
+    border: 3px solid rgb(0, 0, 0) ;
+    text-align: center;
+}
+th.bieg{
+    background-color: rgb(206, 194, 139);
+}
+    

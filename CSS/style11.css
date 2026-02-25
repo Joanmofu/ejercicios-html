@@ -1,0 +1,34 @@
+tr{
+    border: 1px solid blue ;
+}
+table{
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+    border: 3px solid blue ;
+
+}
+h1.azul{
+    color: blue;
+}
+div.tabla{
+    align-content: center;
+    width: 100%;
+ 
+}
+p.arriba{
+       text-align: center;
+       color: blue;
+}
+
+h3{
+    text-align: center;
+    color: blue;
+}
+span{
+    color: black;
+}
+p{
+    color: blue;
+}
